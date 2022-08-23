@@ -25,6 +25,10 @@ description              : "a personal blog on computer systems"
 url                      : "https://blog.jasony.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "1a1a11a/myblog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+head_scripts             :  # additional scripts to include in <head> 
+  - <script type="text/javascript"> var sc_project=12786388; var sc_invisible=1; var sc_security="d9823458"; </script>
+  - <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> 
+  - <noscript><div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12786388/0/d9823458/1/" alt="hit counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Curiosity" # overrides the website title displayed in the masthead, use " " for no title
@@ -32,28 +36,29 @@ breadcrumbs              : false # false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+  # disqus:
+  #   shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  # discourse:
+  #   server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  # facebook:
+  #   # https://developers.facebook.com/docs/plugins/comments
+  #   appid                :
+  #   num_posts            : # 5 (default)
+  #   colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : "master"
-    endpoint             : "https://dbbd2.jasony.me:1280/v3/entry/github/"
+    issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
+  # giscus:
+  #   repo_id              : # Shown during giscus setup at https://giscus.app
+  #   category_name        : # Full text name of the category
+  #   category_id          : # Shown during giscus setup at https://giscus.app
+  #   discussion_term      : # "pathname" (default), "url", "title", "og:title"
+  #   reactions_enabled    : # '1' for enabled (default), '0' for disabled
+  #   theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  # staticman:
+  #   branch               : "master"
+  #   endpoint             : "https://dbbd2.jasony.me:1280/v3/entry/github/"
 reCaptcha:
   siteKey                : 6Lewl5ghAAAAAFxb21S2lH0vyKOeFFm9n3pGbc5B
   secret                 : aZgzK3Ik7dLndXPvTtRS7b+oVz+Myc7RUHlmVz5ne+orIylmDlJ6/odzErL212+5QPH8rt/gKmfDE02cN1jj7IuB2ITeOmVMflMMiSH4CwYe87LbnRAkOUgV/UKN2+yszuYzXFr8ZiPRtlDngF6k47TV8pw5oLgbaCnGK3/m0fIno9JBGDwJa+e7GN/dveq4yfP1uqiA7xB9DkErCxHRwB8+i3jcvB/7VOjm76AGIFmagoU25POQt4LsRhVsHE6eAOOksswLZsxh7Qj2zEK7WDUx+a+cHmXLlqMRaipKha2qIrjtEJMaaMWQy0rp173pd7Uur7DcFOxGjcpu0Zbggg==
@@ -97,7 +102,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : custom # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "custom" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
