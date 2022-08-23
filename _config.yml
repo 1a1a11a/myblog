@@ -25,15 +25,16 @@ description              : "a personal blog on computer systems"
 url                      : "https://blog.jasony.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "1a1a11a/myblog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-head_scripts             :  # additional scripts to include in <head> 
-  - <script type="text/javascript"> var sc_project=12786388; var sc_invisible=1; var sc_security="d9823458"; </script>
-  - <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> 
-  - <noscript><div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12786388/0/d9823458/1/" alt="hit counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+# head_scripts             :  # additional scripts to include in <head> 
+#   - <script type="text/javascript"> var sc_project=12786388; var sc_invisible=1; var sc_security="d9823458"; </script>
+#   - <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> 
+#   - <noscript><div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12786388/0/d9823458/1/" alt="hit counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Curiosity" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : false # false # true, false (default)
 words_per_minute         : 200
+github                   : [metadata]
 comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   # disqus:
