@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Something about computer systems"
+title                    : "Juncheng's blog"
 title_separator          : "|"
 subtitle                 : "Learn something about everything, learn everything about something"
-name                     : "Juncheng Yang"
-description              : "a personal blog on computer systems" 
+name                     : "Juncheng's blog"
+description              : "Juncheng's blog" 
 url                      : "https://blog.jasony.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "1a1a11a/myblog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -31,7 +31,7 @@ repository               : "1a1a11a/myblog" # GitHub username/repo-name e.g. "mm
 #   - <noscript><div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12786388/0/d9823458/1/" alt="hit counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Curiosity" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Juncheng's blog" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : false # false # true, false (default)
 words_per_minute         : 200
 github                   : [metadata]
