@@ -113,7 +113,7 @@ analytics:
 author:
   name             : "Juncheng Yang"
   avatar           : /assets/images/me.jpg # path of avatar image, e.g. "/assets/images/me.jpg"
-  bio              : "Ph.D. student at Carnegie Mellon University, prev Twitter + Cloudflare"
+  bio              : "Ph.D. student at Carnegie Mellon University, ex-Twitter + Cloudflare"
   location         : "Pittsburgh, PA"
   email            : blog@jasony.me
   links:
@@ -237,6 +237,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-katex
 
 # mimic GitHub Pages with --safe
 whitelist:
