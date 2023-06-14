@@ -1,0 +1,7 @@
+{% assign width = include.width | default: "80%" %}
+
+<p align="center">
+<figure class="image"><img src="{{ include.url }}" alt="{{ include.description }}" style="width:{{ width }}; display: block; margin-left: auto; margin-right: auto;">
+    <figcaption>{{ include.description }}</figcaption>
+</figure>
+</p>
