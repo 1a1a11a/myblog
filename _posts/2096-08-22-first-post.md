@@ -52,7 +52,7 @@ tags:
 toc: true
 toc_label: "Table of Contents"
 toc_sticky: true
-toc_icon: "heart"
+# toc_icon: "heart"
 # last_modified_at: 2017-10-26T15:12:19-04:00
 ---
 
@@ -72,8 +72,7 @@ header:
 {% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg){% endraw %}
 ```
 
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/unsplash-image-10.jpg)
-{: .full}
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/unsplash-image-10.jpg){: .full}
 
 Image that fills page content container by adding the `.full` class with:
 
