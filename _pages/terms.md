@@ -42,7 +42,7 @@ Google Adsense, a third party affiliate marketing network, uses cookies to help 
 
 ## Disclosure Policy
 
-I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
+<!-- I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
 
 Currently I'm an affiliate for Amazon and Google Adsense.
 
@@ -53,4 +53,4 @@ What this means for you:
 * I do not let the compensation I receive influence the content, topics, posts, or opinions expressed on this website.
 * I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
 
-Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
+Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page. -->
