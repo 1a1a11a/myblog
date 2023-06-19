@@ -1,21 +1,18 @@
 ---
 title: "A Key-value Cache is NOT a Key-value Store"
-# tagline: "cloudlab, large-scale experiment, libCacheSim, distributed computation"
 # excerpt_separator: "<!--more-->"
-# excerpt: "This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages."
+excerpt: "This post discusses why a key-value cache is not a key-value store, what is the difference between them, and why it matters."
 header:
-  # overlay_image: /assets/images/unsplash-image-1.jpg
-  overlay_color: "#333"
-  # image: /assets/images/unsplash-image-1.jpg
+  overlay_color: "#222"
 author_profile: true
 comments: true
 related: true
 share: true
 
 classes: wide
-# show_date: true
-layout: splash
-# layout: single
+show_date: true
+# layout: splash
+layout: single
 
 categories:
   - Post
