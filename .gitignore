@@ -1,6 +1,11 @@
+.vscode/*
+.DS_Store
+
 _site/
 .jekyll-cache/*
 Gemfile.lock
 docs/
+vendor/bundle/ruby/*
 package-lock.json
 node_modules/
+.sass-cache/*
