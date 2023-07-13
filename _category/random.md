@@ -1,6 +1,6 @@
 ---
-category: [design] #Category ID.
+category: [System] #Category ID.
 hue: var(--c-themeHueOrange) #Category hue. See note [1].
-title: Design #Category title.
+title: Computer Systems 
 description: Lorem ipsum dolor sit amet.
 ---

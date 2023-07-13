@@ -1,18 +1,28 @@
-- title: Programming #Menu item title.
-  url: category/programming.html #Menu item url.
-  icon: assets/img/icons/programming.svg #Menu item icon.
-  hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
-  subnav: #Subnav. See note [2].
-      - title: C++ #Submenu item title.
-        url: category/cpp.html #Submenu item url.
+- title: Computer System 
+  url: category/cache.html 
+  icon: assets/img/icons/programming.svg 
+  hue: "var(--c-themeHueRed)" 
+  subnav: 
+      - title: Cache
+        url: category/cache.html
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
-        subnav: #Another subnav
-            - title: Libraries
-              url: libs.html
-              hue: "var(--c-themeHueBlue)"
-- title: Design
-  url: category/design.html
+        # subnav: 
+        #     - title: Libraries
+        #       url: libs.html
+        #       hue: "var(--c-themeHueBlue)"
+- title: Machine Learning
+  url: category/ml.html
   icon: assets/img/icons/design.svg
-  hue: "var(--c-themeHueRed)"
+  hue: "var(--c-themeHueBlue)"
 
+- title: Life and Travel
+  url: category/life.html
+  icon: assets/img/icons/life.svg
+  hue: "var(--c-themeHueBlue)"
+
+
+- title: Random
+  url: category/random.html
+  icon: assets/img/icons/random.svg
+  hue: "var(--c-themeHueGreen)"
 
