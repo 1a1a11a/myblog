@@ -3,12 +3,22 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-07-13 13:22:52 -0400
 category: [Life, ML]
+layout: search
 
 # nextPart: _posts/2021-01-30-example.md #Next part.
 # prevPart: _posts/2021-01-30-example.md #Previous part.
 og_image: /assets/img/me.jpg #Open Graph preview image.
 og_description: "Example description." #Open Graph description.
 fb_app_id: example
+
+# classes: wide
+# show_date: true
+# layout: splash
+# layout: single
+
+toc: true
+# toc_sticky: true
+# last_modified_at: 2023-06-26T00:00:00-04:00
 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

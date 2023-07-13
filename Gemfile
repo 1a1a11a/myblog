@@ -34,8 +34,8 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "jekyll-theme-simplex"
 
-# gem "jekyll-paginate"
-# gem "jekyll-sitemap"
-# gem "jekyll-gist"
-# gem "jekyll-include-cache"
-# gem "jekyll-katex"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem "jekyll-include-cache"
+gem "jekyll-katex"

@@ -182,10 +182,10 @@ analytics:
 # Site Author
 author:
   name             : "Juncheng Yang"
-  avatar           : /assets/images/me.jpg # path of avatar image, e.g. "/assets/images/me.jpg"
+  avatar           : /assets/img/me.jpg # path of avatar image, e.g. "/assets/images/me.jpg"
   bio              : "Ph.D. student at Carnegie Mellon University, ex-Twitter + Cloudflare"
   location         : "Pittsburgh, PA"
-  email            : blog@jasony.me
+  email            : "blog@jasony.me"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -314,21 +314,21 @@ timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_t
 
 
 # Plugins (previously gems:)
-# plugins:
-#   - jekyll-paginate
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-  # - jekyll-include-cache
-#   - jekyll-katex
+plugins:
+  # - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-katex
 
 # mimic GitHub Pages with --safe
-# whitelist:
-#   - jekyll-paginate
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-  # - jekyll-include-cache
+whitelist:
+  # - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 
 # HTML Compression
 # - https://jch.penibelst.de/
