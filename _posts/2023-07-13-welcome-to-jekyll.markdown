@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-07-13 13:22:52 -0400
-category: [Random, Random]
-layout: search
+category: [Random]
+# layout: single
 
 # nextPart: _posts/2021-01-30-example.md #Next part.
 # prevPart: _posts/2021-01-30-example.md #Previous part.
@@ -38,7 +38,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 To provide image description use this syntax:
 
-<div class="sx-picture">
+<div class="sx-picture" style="align:center">
   <a href="/assets/img/me.jpg" data-lity>
     <img src="/assets/img/me.jpg"/>
   </a>
@@ -55,7 +55,7 @@ To center pictures, put the code inside a `div` with `sx-center` class like this
 
 <div class='sx-button'>
   <a href='https://your.link.here.example.com/' class='sx-button__content theme'>
-    <img src='/assets/img/icons/example_icon.svg'/>#{text}
+    <img src='/assets/img/icon/random.svg'/>#{text}
   </a>
 </div>
 
@@ -77,5 +77,51 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There are two liquid tags: `katex` and `katexmm`.
+
+### katex
+
+Use the `katex` liquid tag for LaTeX math equations like so:
+
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+
+If you want the equation to be rendered in display mode (on its own line, centered, large symbols), just pass in the `display` parameter:
+
+{% katex display %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+
+
+### katexmm
+
+The `katex` liquid tag can be cumbersome, particularly if you have many inline blocks, which would need to be opened
+and closed repeatedly, cluttering the source text. `katexmm` is an alternative that supports fenced math mode blocks
+similar to standard latex:
+
+{% katexmm %}
+This is a mixed environment where you can have normal text and $c = \pm\sqrt{a^2 + b^2}$ fenced math. \$!
+{% endkatexmm %}
+
+
+* `$` for inline
+* `$$` for display mode
 
 

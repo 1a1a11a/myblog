@@ -157,22 +157,22 @@ og_image                 : # Open Graph/Twitter default site image
 # incremental: false
 
 
-# # Markdown Processing
+# Markdown Processing
 # kramdown:
 #   input: GFM
 #   hard_wrap: false
 #   auto_ids: true
 #   footnote_nr: 1
 #   entity_output: as_char
-#   toc_levels: 1..6
+#   toc_levels: 1..2
 #   smart_quotes: lsquo,rsquo,ldquo,rdquo
 #   enable_coderay: false
 
 
-# # Sass/SCSS
-# # sass:
-# #   sass_dir: _sass
-# #   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # # Outputting
@@ -182,6 +182,10 @@ og_image                 : # Open Graph/Twitter default site image
 # timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+
+plugins:
+  - jekyll-toc
+
 # # HTML Compression
 # # - https://jch.penibelst.de/
 # # compress_html:
@@ -189,8 +193,26 @@ og_image                 : # Open Graph/Twitter default site image
 # #   ignore:
 # #     envs: development
 
-
+toc:
+  min_level: 2
+  max_level: 2
+  ordered_list: false
+  # no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
 
 
 img:
   continue_on_error: true
+
+katex:
+  # js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"                  # errorColor
+
+

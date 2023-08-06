@@ -15,18 +15,20 @@ gem "jekyll", "~> 4.3.2"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-end
 
-# search functionality    https://github.com/algolia/jekyll-algolia
 # group :jekyll_plugins do
-#   gem 'jekyll-algolia', '~> 1.0'
 # end
 
-# image https://www.mslinn.com/jekyll_plugins/jekyll_img.html
 group :jekyll_plugins do
+# search functionality    https://github.com/algolia/jekyll-algolia
+#   gem 'jekyll-algolia', '~> 1.0'
+
+# gem "jekyll-feed", "~> 0.12"
+
+  # image https://www.mslinn.com/jekyll_plugins/jekyll_img.html
   gem 'jekyll_img', "~> 0.1"
+
+  gem "jekyll-katex"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -47,7 +49,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-include-cache"
-gem "jekyll-katex"
-gem 'jekyll-toc'
+# gem "jekyll-gist"
+# gem "jekyll-include-cache"
+gem "jekyll-toc"
+
