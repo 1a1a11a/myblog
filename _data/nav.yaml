@@ -25,3 +25,8 @@
   url: category/random.html
   icon: assets/img/icon/random.svg
   hue: "var(---themeHueBlue)"
+
+- title: AboutMe
+  url: jasony.me
+  icon: assets/img/icon/random.svg
+  hue: "var(---themeHueBlue)"

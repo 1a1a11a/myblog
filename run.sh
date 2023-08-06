@@ -7,6 +7,8 @@
 # git config --global user.email peter.waynechina@gmail.com
 # git config --global user.name Jason
 
+# sudo apt install libvips
+
 
 bundle install
 bundle exec jekyll serve --watch --host 0.0.0.0 --safe

@@ -18,25 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# title: Your awesome title
-# email: your-email@example.com
-# description: >- # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  jekyll
+title: Juncheng's blog
+email: peter.waynechina@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Learn something about everything, learn everything about something
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.jasony.me" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 1a1a11a
+github_username:  1a1a11a
 
 # Build settings
 # theme: minima
-theme: jekyll-theme-simplex
+# theme: jekyll-theme-simplex
 
 # plugins:
 #   - jekyll-feed
 
-logo_img: /assets/img/icons/golasblog_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
+logo_img: /assets/img/icon/em.png #Absolute path to the logo. If not specified, the title will be displayed instead.
 copyright: Juncheng Yang 2024
 
 collections:
@@ -87,267 +85,112 @@ defaults:
 
 
 locale                   : "en-US"
-title                    : "Juncheng's blog"
-title_separator          : "|"
-subtitle                 : "Learn something about everything, learn everything about something"
-name                     : "Juncheng's blog"
-description              : "Juncheng's blog" 
-url                      : "https://blog.jasony.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/" # the subpath of your site, e.g. "/blog"
-repository               : "1a1a11a/myblog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-# head_scripts             :  # additional scripts to include in <head> 
-#   - <script type="text/javascript"> var sc_project=12786388; var sc_invisible=1; var sc_security="d9823458"; </script>
-#   - <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> 
-#   - <noscript><div class="statcounter"><a title="hit counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12786388/0/d9823458/1/" alt="hit counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Juncheng's blog" # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : false # false # true, false (default)
 words_per_minute         : 200
 github                   : [metadata]
-comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  # disqus:
-  #   shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  # discourse:
-  #   server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  # facebook:
-  #   # https://developers.facebook.com/docs/plugins/comments
-  #   appid                :
-  #   num_posts            : # 5 (default)
-  #   colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : "github-light" # "github-light" (default), "github-dark"
-    issue_term: "pathname"
-    label: "comment" # Optional - must be existing label.
-  # giscus:
-  #   repo_id              : # Shown during giscus setup at https://giscus.app
-  #   category_name        : # Full text name of the category
-  #   category_id          : # Shown during giscus setup at https://giscus.app
-  #   discussion_term      : # "pathname" (default), "url", "title", "og:title"
-  #   reactions_enabled    : # '1' for enabled (default), '0' for disabled
-  #   theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  # staticman:
-  #   branch               : "master"
-  #   endpoint             : "https://dbbd2.jasony.me:1280/v3/entry/github/"
-reCaptcha:
-  siteKey                : 6Lewl5ghAAAAAFxb21S2lH0vyKOeFFm9n3pGbc5B
-  secret                 : aZgzK3Ik7dLndXPvTtRS7b+oVz+Myc7RUHlmVz5ne+orIylmDlJ6/odzErL212+5QPH8rt/gKmfDE02cN1jj7IuB2ITeOmVMflMMiSH4CwYe87LbnRAkOUgV/UKN2+yszuYzXFr8ZiPRtlDngF6k47TV8pw5oLgbaCnGK3/m0fIno9JBGDwJa+e7GN/dveq4yfP1uqiA7xB9DkErCxHRwB8+i3jcvB/7VOjm76AGIFmagoU25POQt4LsRhVsHE6eAOOksswLZsxh7Qj2zEK7WDUx+a+cHmXLlqMRaipKha2qIrjtEJMaaMWQy0rp173pd7Uur7DcFOxGjcpu0Zbggg==
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
 lunr:
   search_within_pages    : true # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
 
-# Social Sharing
-twitter:
-  username               :1a1a11a
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  twitter:
+    username               :1a1a11a
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider               : "custom" # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+# # Reading Files
+# include:
+#   - .htaccess
+#   - _pages
 
 
-# Site Author
-author:
-  name             : "Juncheng Yang"
-  avatar           : /assets/img/me.jpg # path of avatar image, e.g. "/assets/images/me.jpg"
-  bio              : "Ph.D. student at Carnegie Mellon University, ex-Twitter + Cloudflare"
-  location         : "Pittsburgh, PA"
-  email            : "blog@jasony.me"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:blog@jasony.me"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jasony.me"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/1a1a11a"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/1a1a11a"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
+# # Exclude from processing.
+# #
+# exclude:
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - "*.sublime-project"
+#   - "*.sublime-workspace"
+#   - vendor
+#   - .asset-cache
+#   - .bundle
+#   - .jekyll-assets-cache
+#   - .sass-cache
+#   - assets/js/plugins
+#   - assets/js/_main.js
+#   - assets/js/vendor
+#   - Capfile
+#   - CHANGELOG
+#   - config
+#   - Gemfile
+#   - Gruntfile.js
+#   - gulpfile.js
+#   - LICENSE
+#   - log
+#   - node_modules
+#   - package.json
+#   - package-lock.json
+#   - Rakefile
+#   - README
+#   - tmp
+#   - /docs # ignore Minimal Mistakes /docs
+#   - /test # ignore Minimal Mistakes /test
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/1a1a11a"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/1a1a11a"
-    # - label: "GitLab"
-    #   icon: "fab fa-fw fa-gitlab"
-    #   # url:
-    # - label: "Bitbucket"
-    #   icon: "fab fa-fw fa-bitbucket"
-    #   # url:
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url:
+# keep_files:
+#   - .git
+#   - .svn
+# encoding: "utf-8"
+# markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
+# # Conversion
+# markdown: kramdown
+# highlighter: rouge
+# lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
 
 
-# Exclude from processing.
-#
-exclude:
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# # Markdown Processing
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   smart_quotes: lsquo,rsquo,ldquo,rdquo
+#   enable_coderay: false
 
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# # Sass/SCSS
+# # sass:
+# #   sass_dir: _sass
+# #   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+# # Outputting
+# # permalink: /:categories/:title/
+# # paginate: 5 # amount of posts to show
+# # paginate_path: /page:num/
+# timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# # HTML Compression
+# # - https://jch.penibelst.de/
+# # compress_html:
+# #   clippings: all
+# #   ignore:
+# #     envs: development
 
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins (previously gems:)
-plugins:
-  # - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-katex
-
-# mimic GitHub Pages with --safe
-whitelist:
-  # - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-
-# defaults:
-#   # _posts
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: single
-#       author_profile: true
-#       read_time: true
-#       comments: true
-#       share: true
-#       related: true
-#       show_date: true
+img:
+  continue_on_error: true
