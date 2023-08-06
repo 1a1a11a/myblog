@@ -1,7 +1,7 @@
 - title: Computer System 
-  url: category/cache.html 
-  icon: assets/img/icons/programming.svg 
-  hue: "var(--c-themeHueRed)" 
+  url: category/cache.html
+  icon: assets/img/icon/server.svg 
+  hue: "var(--c-themeHueOrange)" 
   subnav: 
       - title: Cache
         url: category/cache.html
@@ -10,19 +10,18 @@
         #     - title: Libraries
         #       url: libs.html
         #       hue: "var(--c-themeHueBlue)"
-- title: Machine Learning
-  url: category/ml.html
-  icon: assets/img/icons/design.svg
-  hue: "var(--c-themeHueBlue)"
+# - title: Machine Learning
+#   url: category/ml.html
+#   icon: assets/img/icon/design.svg
+#   hue: "var(--c-themeHueBlue)"
 
-- title: Life and Travel
-  url: category/life.html
-  icon: assets/img/icons/life.svg
-  hue: "var(--c-themeHueBlue)"
+# - title: Life and Travel
+#   url: category/life.html
+#   icon: assets/img/icon/life.svg
+#   hue: "var(--c-themeHueBlue)"
 
 
 - title: Random
   url: category/random.html
-  icon: assets/img/icons/random.svg
-  hue: "var(--c-themeHueGreen)"
-
+  icon: assets/img/icon/random.svg
+  hue: "var(---themeHueBlue)"

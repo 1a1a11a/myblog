@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-07-13 13:22:52 -0400
-category: [Life, ML]
+category: [Random, Random]
 layout: search
 
 # nextPart: _posts/2021-01-30-example.md #Next part.

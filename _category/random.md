@@ -1,6 +1,6 @@
 ---
-category: [System] #Category ID.
-hue: var(--c-themeHueOrange) #Category hue. See note [1].
-title: Computer Systems 
-description: Lorem ipsum dolor sit amet.
+category: [Random] #Category ID.
+hue: var(--c-themeHueGreen) #Category hue. See note [1].
+title: Random
+description: Random blogs.
 ---

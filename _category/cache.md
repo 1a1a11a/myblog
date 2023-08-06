@@ -1,6 +1,6 @@
 ---
 category: [cache] #Category ID.
-hue: var(--c-themeHueOrange) #Category hue. See note [1].
-title: Design #Category title.
-description: Lorem ipsum dolor sit amet.
+hue: var(--c-themeHueRed) #Category hue. See note [1].
+title: Cache #Category title.
+description: Something about caching systems.
 ---
