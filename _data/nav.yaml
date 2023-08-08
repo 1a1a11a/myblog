@@ -1,15 +1,19 @@
-- title: Computer System 
+- title: Homepage
+  url: /
+  icon: assets/img/icon/blog.svg
+  hue: "var(---themeHueBlue)"
+- title: Computer System
   url: category/cache.html
-  icon: assets/img/icon/server.svg 
-  hue: "var(--c-themeHueOrange)" 
-  subnav: 
-      - title: Cache
-        url: category/cache.html
-        hue: "var(--c-themeHueOrange)" #Submenu item hue.
-        # subnav: 
-        #     - title: Libraries
-        #       url: libs.html
-        #       hue: "var(--c-themeHueBlue)"
+  icon: assets/img/icon/server.svg
+  hue: "var(--c-themeHueOrange)"
+  subnav:
+    - title: Cache
+      url: category/cache.html
+      hue: "var(--c-themeHueOrange)"
+      # subnav:
+      #     - title: Libraries
+      #       url: libs.html
+      #       hue: "var(--c-themeHueBlue)"
 # - title: Machine Learning
 #   url: category/ml.html
 #   icon: assets/img/icon/design.svg
@@ -20,13 +24,16 @@
 #   icon: assets/img/icon/life.svg
 #   hue: "var(--c-themeHueBlue)"
 
-
 - title: Random
   url: category/random.html
   icon: assets/img/icon/random.svg
   hue: "var(---themeHueBlue)"
+  subnav:
+    - title: Tool
+      url: category/tool.html
+      hue: "var(--c-themeHueOrange)"
 
 - title: AboutMe
-  url: jasony.me
-  icon: assets/img/icon/random.svg
+  url: aboutme.html
+  icon: assets/img/icon/homepage.svg
   hue: "var(---themeHueBlue)"
