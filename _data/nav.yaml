@@ -1,6 +1,6 @@
 - title: Homepage
   url: /
-  icon: assets/img/icon/blog.svg
+  icon: assets/img/icon/homepage.svg
   hue: "var(---themeHueBlue)"
 - title: Computer System
   url: category/cache.html
@@ -35,5 +35,5 @@
 
 - title: AboutMe
   url: aboutme.html
-  icon: assets/img/icon/homepage.svg
+  icon: assets/img/icon/me.svg
   hue: "var(---themeHueBlue)"

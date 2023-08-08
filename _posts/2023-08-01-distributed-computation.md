@@ -8,19 +8,19 @@ category: [random, tool]
 
 
 # Background
-I like measurement and analysis and I run a lot of trace analysis in the past. For example, I find that [FIFO-Reinsertion has a lower miss ratio than LRU for cache eviction](/system/cache/2023/06/24/fifo-lru.html), [simple FIFO-based algorithms can be more efficient and effetive than state-of-the-art algorithms](/system/cache/2023/08/16/s3fifo.html). 
+I like measurement and analysis, and I run a lot of trace analysis in the past. For example, I find that [FIFO-Reinsertion has a lower miss ratio than LRU for cache eviction](/system/cache/2023/06/24/fifo-lru.html), [simple FIFO-based algorithms can be more efficient and effective than state-of-the-art algorithms](/system/cache/2023/08/16/s3fifo.html). 
 
-The analysis is performed using more than 6000 traces with more than 800 billion requests. In total, more than 1 million of CPU core hours are used. To perform such large-scale analysis, I need to run them in parallel. However, I cannot use existing platforms to do this easily because my scripts are highly-customized. Moreover, I need a platform that can **maximizes resource utilization**. Because I cannot predict the CPU and memory usages of my jobs, the platform needs to run as many jobs as possible on each node, if later the resource usage grows beyond the capacity of the node, the latest job should be returned to the job pool.
+The analysis is performed using more than 6000 traces with more than 800 billion requests. In total, more than 1 million of CPU core hours are used. To perform such large-scale analysis, I need to run them in parallel. However, I cannot use existing platforms to do this easily because my scripts are highly-customized. Moreover, I need a platform that can **maximize resource utilization**. Because I cannot predict the CPU and memory usage of my jobs, the platform needs to run as many jobs as possible on each node, if later the resource usage grows beyond the capacity of the node, the latest job should be returned to the job pool.
 
 Therefore, I need to build my own platform to run the analysis. 
 So here is the distComp platform, it is open-sourced at [https://github.com/1a1a11a/distComp](https://github.com/1a1a11a/distComp).
 
 # distComp
-distComp is a platform to run distributed computation using data parallel. Currently it supports bash jobs and Python jobs. 
+distComp is a platform to run distributed computation using data-parallel. Currently, it supports bash jobs and Python jobs. 
 ## Features
-* **Utilization maximizzation**: distCmp runs as many tasks as possible on each node. When memory usage is going to exceed node capacity, the most recent task will be returned to the to do task queue.
+* **Utilization maximization**: distComp runs as many tasks as possible on each node. When memory usage is going to exceed node capacity, the most recent task will be returned to the to-do task queue.
 * **On-demand task submission**: new tasks can be submitted at any time.
-* **Fault tolerance**: Restarted workers can fetch its previous tasks to continue, and if some workers fail, the failed tasks can be moved to the todo queue.
+* **Fault tolerance**: Restarted workers can fetch their previous tasks to continue, and if some workers fail, the failed tasks can be moved to the todo queue.
 * **Heterogeneous workers**: distComp supports heterogeneous workers, and it will assign more tasks to beefier workers.
 
 
@@ -32,10 +32,10 @@ distComp is a platform to run distributed computation using data parallel. Curre
 </figure> 
 </center>
 
-The architecture of distComp has evolved over time. The first version uses RPC with worker nodes fetching tasks from the master node. However, this design couples states into the master and it is hard to be fault-tolerant.
-The current version of distComp uses a manager-worker architecture. The manager node submits the tasks to a redis instance (running on the same node as the manager). 
+The architecture of distComp has evolved over time. The first version uses RPC with worker nodes fetching tasks from the master node. However, this design couples states into the master, which is hard to be fault-tolerant.
+The current version of distComp uses a manager-worker architecture. The manager node submits the tasks to a Redis instance (running on the same node as the manager). 
 The worker nodes perform the computation. 
-THe task submission and task execution are decoupled. Meanwhile, the state is persisted in Redis which periodically saves the state to disk.
+The task submission and task execution are decoupled. Meanwhile, the state is persisted in Redis which periodically saves the state to disk.
 
 
 ## How to use 
