@@ -3,6 +3,9 @@
 // =============================
 // Used for single post view.
 
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
 $postMaxWidth: 1000px;
 
 .post{
@@ -92,11 +95,45 @@ $postMaxWidth: 1000px;
     &__content{
 
         color: var(--c-postText);
+        font-size: 1.05rem;
+        max-width: 720px;
+        
         h1{
-            font-size: 1.8rem;
+            font-size: 2rem;
+            margin-top: 2.5rem;
         }
+        
+        h2{
+            font-size: 1.75rem;
+            margin-top: 2rem;
+        }
+        
+        h3{
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        
         img{
             max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+        
+        code{
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            background: var(--c-themeSecondaryLight);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        
+        blockquote{
+            border-left: 3px solid var(--c-themeTerniaryLight);
+            padding-left: 1.5rem;
+            margin-left: 0;
+            font-style: italic;
+            color: var(--c-themeTerniaryDark);
         }
     }
 

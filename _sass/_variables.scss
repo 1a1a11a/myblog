@@ -3,24 +3,24 @@
 // =============================
 // Contains all the useful variables for colors, sizes...
 
-// THEME COLORS
+// THEME COLORS - Modern, clean palette with reduced contrast
 :root{
 
-    --c-themePrimaryLight: #EFEFEF;
-    --c-themePrimaryDark:  #101010;
-    --c-themeSecondaryLight: #DADADA;
-    --c-themeSecondaryDark: #252525;
-    --c-themeTerniaryLight: #AEAEAE;
-    --c-themeTerniaryDark: #515151;
-    --c-themeQuaternaryLight: #919191;
-    --c-themeQuaternaryDark: #888888;
+    --c-themePrimaryLight: #FAFAF9;
+    --c-themePrimaryDark:  #1C1917;
+    --c-themeSecondaryLight: #F5F5F4;
+    --c-themeSecondaryDark: #292524;
+    --c-themeTerniaryLight: #E7E5E4;
+    --c-themeTerniaryDark: #57534E;
+    --c-themeQuaternaryLight: #78716C;
+    --c-themeQuaternaryDark: #A8A29E;
 
-    --c-themeHueRed: #C02717;
-    --c-themeHueGreen: #8EA604;
-    --c-themeHueBlue: #2E86AB;
-    --c-themeHueOrange: #E59500;
-    --c-themeHuePurple: #9F00CE;
-    --c-themeHueBrown: #230007;
+    --c-themeHueRed: #60A5FA;
+    --c-themeHueGreen: #34D399;
+    --c-themeHueBlue: #38BDF8;
+    --c-themeHueOrange: #FB923C;
+    --c-themeHuePurple: #A78BFA;
+    --c-themeHueBrown: #A8A29E;
 }
 
 // ELEMENT COLORS
@@ -277,8 +277,9 @@
 // FONTS
 :root{
 
-    --f-header: Roboto;
-    --f-text: Roboto Slab;
+    // Modern system font stack for clean, readable typography
+    --f-header: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --f-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 // FIXED SIZES

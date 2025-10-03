@@ -3,6 +3,9 @@
 // =============================
 // Used for global styles.
 
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
 *, *:before, *:after{
     box-sizing: border-box;
 }
@@ -11,16 +14,20 @@ html{
 
     font-family: var(--f-text);
 
-    // Root font size. Other sizes are derived from this accroding to variable values.
-    font-size: 16px;
+    // Root font size. Other sizes are derived from this according to variable values.
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     @include for-size('tablet'){
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 body{
     background: var(--c-pageBackground);
+    color: var(--c-postText);
     
     margin: 0;
     min-height: 100vh;
@@ -31,21 +38,49 @@ body{
     justify-content: center;
 }
 
-h1,h2,h3,h4,h5,h5,h6{
-
+h1,h2,h3,h4,h5,h6{
     font-family: var(--f-header);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
 }
 
 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    @include for-size('tablet'){
+        font-size: 2rem;
+    }
+}
 
+h2{
     font-size: 2rem;
+    
+    @include for-size('tablet'){
+        font-size: 1.75rem;
+    }
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 p{
     font-size: var(--s-p);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
 }
 
 a{
+    color: var(--c-link);
+    text-decoration-color: var(--c-themeTerniaryLight);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
     
     &:link{
         color: var(--c-link);
@@ -57,6 +92,7 @@ a{
 
     &:hover{
         color: var(--c-linkHover);
+        text-decoration-thickness: 2px;
     }
 
     &:active{

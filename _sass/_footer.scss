@@ -3,6 +3,9 @@
 // =============================
 // Used for page footer.
 
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
 .footer{
 
     @include flexbox;
