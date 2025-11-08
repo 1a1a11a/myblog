@@ -1,6 +1,8 @@
 ---
 ---
 
+@use "_variables.scss" as *;
+
 // =============================
 // main.scss
 // =============================
@@ -9,21 +11,21 @@
 // Do not change the order of the imports behind this comment.
 
 // GLOBAL VARIABLES
-@use "_variables.scss" as *;
 
 // LIQUID CALCULATIONS
-$s-menuWidth: calc(4 * (8rem + 1rem * 2));
+{% for items in site.data.nav %}
+    $s-menuWidth: calc({{ forloop.length }} * (#{$s-menuItemWidth} + #{$s-menuItemPadding} * 2));
+{% endfor %}
 
 // OTHER IMPORTS
-@use "_mixins.scss" as *;
-@use "_global.scss" as *;
+@use "global";
 
 // Do not change the order of the imports above this comment.
 
-@use "_header.scss" as *;
-@use "_footer.scss" as *;
-@use "_feed.scss" as *;
-@use "_index.scss" as *;
-@use "_post.scss" as *;
-@use "_page.scss" as *;
+@use "header";
+@use "footer";
+@use "feed";
+@use "index";
+@use "post";
+@use "page";
 
